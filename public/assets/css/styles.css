@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    border:0;
+    font-family: 'Bubbler One', sans-serif;
+}
+*:focus{
+    outline: 0;
+}
+.leftCol{
+    float: left;
+    height: 100vh;
+    width: 50%;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+.overlay{
+    background-color: rgba(8, 128, 8, 0.3);
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.container{
+    position: relative;
+    z-index: 5;
+}
+#logo{
+    display: block;
+    margin: auto;
+    height: 40vh;
+    margin-top: 30vh;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.4);
+}
+.rightCol{
+    float: right;
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(66,105,16,1);
+    box-shadow: 4px 4px 8px 6px rgba(0,0,0,0.4);
+}
+h1{
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 5vw;
+    text-align: center; 
+    margin-top: 12vh;
+    color: rgba(210,185,39,1);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+#view{
+    font-family: 'Bubbler One', sans-serif;
+    font-weight: lighter;    
+    border: none;
+    height: 12vh;
+    width: 20vw;
+    background: rgba(66,105,16,1);
+    border-radius: 50px;
+    color: rgba(210,185,39,1);
+    font-size:3vw;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4);
+    transition: background 0.5s;
+    display: block;
+    margin: auto;
+    margin-top: 14vh;
+}
+#view:hover{
+    background: rgba(0,0,0,0);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#download{
+    text-align: center;
+    font-family: 'Bubbler One', sans-serif;
+    font-weight: lighter;    
+    border: none;
+    height: 10vh;
+    width: 20vw;
+    background: rgba(66,105,16,1);
+    border-radius: 50px;
+    color: rgba(210,185,39,1);
+    font-size:3vw;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4);
+    transition: background 0.5s;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    padding-top: 10px;
+}
+#download:hover{
+    background: rgba(0,0,0,0);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.modalTable{
+    position: fixed;
+    z-index: 1000;
+    top:100px;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    height: 60vh;
+    min-width:10vw;
+    width: auto; 
+    display: none;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.4);
+    overflow: auto;
+    overflow-x: auto;
+    padding: 10px;
+    padding-top: 40px;
+}
+.close{
+    margin-top: -50px;
+    float: right;
+    font-size: 3vw;
+}
+.close:hover,
+.close:focus {
+    color: #f00;
+    text-decoration: none;
+    cursor: pointer;
+}
+table, td, th {
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+}
+th{
+    background-color: rgba(66,105,16,1);
+    color: rgba(210,185,39,1);
+}
+tr:nth-child(even) {
+    background-color: rgba(66,105,16,0.3);
+    
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(66,105,16,1); 
+}
